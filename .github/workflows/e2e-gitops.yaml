@@ -87,7 +87,7 @@ jobs:
         run: |
           docker pull docker.io/nlorca/supermariogitopsproject:${{ env.VERSION }}
           docker save docker.io/nlorca/supermariogitopsproject:${{ env.VERSION }} \
-            -o supermacriolatestdockerimage.tar
+            -o supermariolatestdockerimage.tar
           ls -lh supermariolatestdockerimage.tar
 
       - name: Run Trivy vulnerability scanner in tarball mode
